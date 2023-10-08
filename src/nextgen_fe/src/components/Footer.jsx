@@ -1,21 +1,23 @@
 import { Typography } from "@material-tailwind/react";
+import Logo from "../img/loguitooo.png"
+import AboutUs from "../pages/AboutUs";
+import { Link } from "react-router-dom";
 
 export function Footer() {
     return (
         <footer className="w-full bg-white p-8 mx-auto max-w-screen-xl text-center">
             <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12">
-                <img src="/img/logo-ct-dark.png" alt="logo-ct" className="w-10" />
+                <img src={Logo} alt="logo-ct" className="w-40" />
                 <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
-                    <li>
+                    <Link to="/aboutUs">
                         <Typography
                             as="a"
-                            href="#"
                             color="blue-gray"
                             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
                         >
                             About Us
                         </Typography>
-                    </li>
+                    </Link>
                     <li>
                         <Typography
                             as="a"
