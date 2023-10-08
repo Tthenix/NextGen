@@ -29,68 +29,122 @@
       "pass": "1234",
       "user": "Lucca",
       "id": 5
+    },
+    {
+      "email": "palo@gmail.com",
+      "pass": "1234",
+      "user": "pablo",
+      "id": 6
+    },
+    {
+      "email": "seba@gmail.com",
+      "pass": "1234",
+      "user": "seba",
+      "id": 7
+    },
+    {
+      "email": "Nasa@gmail.com",
+      "pass": "nasa123",
+      "user": "NASA",
+      "id": 8
+    },
+    {
+      "email": "testt@gmail.com",
+      "pass": "1234",
+      "user": "testtt",
+      "id": 9
+    },
+    {
+      "user": "a",
+      "email": "mario@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "aa",
+      "linkedIn": "aaa",
+      "description": "aaaa",
+      "selectedValue": "",
+      "id": 10
+    },
+    {
+      "user": "",
+      "email": "mario@gmail.com",
+      "pass": "123",
+      "confirmPass": "",
+      "github": "",
+      "linkedIn": "",
+      "description": "",
+      "selectedValue": "",
+      "id": 11
+    },
+    {
+      "user": "mario2pai",
+      "email": "mario@gmail.com",
+      "pass": "123",
+      "confirmPass": "123",
+      "github": "1asda",
+      "linkedIn": "adsad",
+      "description": "ada",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 12
+    },
+    {
+      "user": "adadsa",
+      "email": "mario@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "dafa",
+      "linkedIn": "asfafa",
+      "description": "afsafafsafga",
+      "selectedOption": {
+        "value": "angular",
+        "label": "Material Tailwind Angular"
+      },
+      "id": 13
     }
   ],
   "proyectos": [
     {
-      "projectName": "Cansat",
-      "description": "adsadasda",
-      "id": 1,
-      "userId": 1,
+      "projectName": "BPS Data Repository",
+      "description": "The NASA BPS data repository is seeking collaborators and sponsors to expand its scope and enhance its infrastructure. They are also looking for investments to conduct advanced data analysis and expand their database.",
       "tags": [
-        "tecnología",
-        "educación"
-      ]
-    },
-    {
-      "projectName": "Dschool",
-      "description": "SISISISI",
-      "id": 2,
-      "userId": 1,
-      "tags": [
-        "educación",
-        "innovación"
-      ]
-    },
-    {
-      "projectName": "MarioPRoject",
-      "description": "XD",
-      "id": 3,
-      "userId": 2,
-      "tags": [
-        "educación"
-      ]
-    },
-    {
-      "projectName": "waka waka",
-      "description": "waka waka eeee samira samira",
-      "id": 4,
-      "userId": 3,
-      "tags": [
-        "innovación",
-        "tecnología"
-      ]
-    },
-    {
-      "projectName": "nodoapp",
-      "description": "esta app es [ar sahdasjfjsaljaklfjals",
-      "id": 5
-    },
-    {
-      "projectName": "NextGen",
-      "description": "proyecto de space app que consiste en marketplace open source",
-      "tags": [
-        "tecnologia, innovacion"
+        "Biology, Information Analysis, Space"
       ],
-      "id": 6
+      "userId": 8,
+      "needs": "Collaborators, sponsors, investment for advanced analysis, and database expansion.",
+      "id": 1
     },
     {
-      "projectName": "dadas",
-      "description": "asada",
+      "projectName": "LSDA (NASA Space Flight Data Archives)",
+      "description": "The LSDA project is open to collaboration with research institutions and universities. They are seeking investment to maintain and improve data accessibility, as well as to expand the amount of data available to the scientific community.",
       "tags": [
-        "ada,sada"
+        "Mathematics, Aerospace, Medicine, Data Analysis"
       ],
-      "id": 7
+      "userId": 8,
+      "needs": "Collaborators (research institutions and universities), investment to enhance data accessibility and expand the amount of available data.",
+      "id": 2
+    },
+    {
+      "projectName": "Physical Science Informatics, PSI (Physical Science Informatics System)",
+      "description": "PSI is seeking collaborators to utilize the system data and expand space research. They are interested in partnering with research institutions and scientists to explore new areas of study using existing data.",
+      "tags": [
+        "Data System, Research, Physical Experiments"
+      ],
+      "userId": 8,
+      "needs": "Collaborators (research institutions, scientists), partnerships to explore new areas of study.",
+      "id": 3
+    },
+    {
+      "projectName": "Materials in Space",
+      "description": "The Materials in Space project is open to collaboration with research organizations and companies. They are seeking investment to expand their database and improve analysis tools for future research.",
+      "tags": [
+        "Space, Data System, Information Analysis, Structure, Material Testing"
+      ],
+      "userId": 8,
+      "needs": "Collaborators (research organizations and companies), investment to expand the database and enhance analysis tools.",
+      "id": 4
     }
   ]
 }

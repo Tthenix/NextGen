@@ -6,12 +6,13 @@ import {
     CardFooter,
     Typography,
     Button,
-    Chip,
 } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
+import useProjects from "./UseProjects";
 
 const Cards = () => {
     const [proyectos, setProyectos] = useState([]);
+    const projects = useProjects();
 
     useEffect(() => {
         const fetchProyectos = async () => {
@@ -29,6 +30,7 @@ const Cards = () => {
                     };
                 });
 
+
                 // Ordenar proyectos por id de forma descendente
                 const sortedProyectos = proyectosData.sort((a, b) => b.id - a.id);
                 setProyectos(sortedProyectos);
@@ -37,30 +39,41 @@ const Cards = () => {
             }
         };
 
+
         fetchProyectos();
     }, []);
 
     return (
-        <div className="container mx-auto p-4">
-            <h2 className="text-2xl font-bold mb-4">Todos los Proyectos:</h2>
+        <div className="container mx-auto p-4 flex flex-col items-center justify-center">       <h2 className="text-2xl font-bold mb-4">All projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {proyectos.map((proyecto) => (
-                    <Card key={proyecto.id} className="flex flex-col h-full justify-between">
+                    <Card key={proyecto.id} className="flex flex-col h-full border border-gray-300 rounded-lg p-4">
                         <CardBody className="flex flex-col items-center justify-center h-full">
-                            <Typography variant="h5" color="blue-gray" className="mb-4 text-center">
+                            <Typography variant="h5" color="blue-gray" className="mb-4 text-center text-2xl font-bold">
                                 {proyecto.projectName}
                             </Typography>
+                            <Typography className="text-center mb-6">{proyecto.description}</Typography>
                             <div className="mb-2">
+                                {proyecto.needs && (
+                                    <div className="mb-2 text-center ">
+                                        <strong>Project Needs</strong>
+                                        <Typography>{proyecto.needs}</Typography>
+                                    </div>
+                                )}
+                                <div className="text-center mb-6">
+                                    <strong>Create by</strong>
+                                    <Typography>{proyecto.user}</Typography>
+                                </div>
+
+
                                 {proyecto.tags && proyecto.tags.map((tag, index) => (
-                                    <span key={index} className="text-sm text-blue-500 mr-2">
+                                    <span key={index} className="text-center text-blue-500 mr-2">
                                         {tag}
                                     </span>
                                 ))}
                             </div>
-                            <Typography className="text-center mb-2">Creado por: {proyecto.user}</Typography>
-                            <Typography className="text-center mb-6">{proyecto.description}</Typography>
                         </CardBody>
-                        <CardFooter className="pt-0">
+                        <CardFooter className="pt-0 text-center ">
                             <Link to="/readMore" className="text-center w-full">
                                 <Button>Read More</Button>
                             </Link>

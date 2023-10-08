@@ -9,7 +9,7 @@ import LayoutPublic from './layout/LayoutPublic';
 import NotFound from './pages/NotFound';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
-import Perfil from './pages/Perfil';
+import Profile from './pages/Profile';
 import AboutUs from './pages/AboutUs';
 import CreateCards from './pages/CreateCards';
 
@@ -32,8 +32,8 @@ export const router = createBrowserRouter([
         element: <Register />,
       },
       {
-        path: "/perfil",
-        element: <Perfil />,
+        path: "/Profile",
+        element: <Profile />,
       },
       {
         path: "/aboutUs",

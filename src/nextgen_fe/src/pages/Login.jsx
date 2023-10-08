@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     Card,
     CardBody,
@@ -17,7 +17,15 @@ export function Login() {
     let navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [userData, setUserData] = useState(null); // Nuevo estado para almacenar datos del usuario
+    const [userData, setUserData] = useState(null);
+
+    useEffect(() => {
+        // Verificar si hay datos de usuario en localStorage cuando el componente se monta
+        const storedUserData = localStorage.getItem("userData");
+        if (storedUserData) {
+            setUserData(JSON.parse(storedUserData));
+        }
+    }, []);
 
     const handleSignIn = async () => {
         try {
@@ -30,7 +38,8 @@ export function Login() {
 
             if (response.data.length > 0) {
                 // Usuario autenticado
-                setUserData(response.data[0]); // Almacena los datos del usuario
+                setUserData(response.data[0]); // Almacena los datos del usuario en el estado local
+                localStorage.setItem("userData", JSON.stringify(response.data[0])); // Almacena los datos del usuario en localStorage
                 Swal.fire({
                     icon: "success",
                     title: "Inicio de sesión exitoso",
@@ -61,13 +70,12 @@ export function Login() {
     };
 
     return (
+
         <div className="h-screen flex justify-center items-center">
             <div className="w-80">
                 <div className=" grid place-items-center">
                     <img src={LogoPng} alt="logo" className="w-40" />
-                    {/* <Typography variant="h5" color="blue-gray" className="mb-4 text-center">
-                        Login
-                    </Typography> */}
+
                 </div>
 
                 <CardBody className="flex flex-col gap-4">

@@ -12,19 +12,19 @@ export function Banner() {
             <figcaption className="absolute top-8 left-10 transform -translateY-1/4 py-4 px-4 md:py-8 md:px-8 lg:py-10 lg:px-10 rounded-xl text-white text-lg md:text-xl lg:text-2xl">
                 <div>
                     <Typography variant="h4" color="white">
-                        NEXTmos - conectando ideas
+                        NEXTmos - Connecting Ideas
                     </Typography>
                     <Typography color="white" className="mt-1">
-                        Somos la primera página web en reunir proyectos
+                        We are the first website bringing together open-source
                     </Typography>
                     <Typography color="white" className="mt-1">
-                        open source de ciencia a nivel internacional.
+                        science projects at an international level. Our
                     </Typography>
                     <Typography color="white" className="mt-1">
-                        Nuestra misión es que encuentres tu proyecto
+                        mission is to help you find your ideal project and
                     </Typography>
                     <Typography color="white" className="mt-1">
-                        ideal y que potencies tu proyecto
+                        empower your endeavors.
                     </Typography>
                 </div>
             </figcaption>

@@ -25,7 +25,7 @@ const ReadMore = () => {
                 </div>
             </div>
             <div className=" col-span-6 row-span-1 flex items-center justify-center p-4"><Redes /></div>
-            <div className=" col-span-6 row-span-2 flex items-center justify-center p-4">f</div>
+            <div className=" col-span-6 row-span-2 flex items-center justify-center p-4"></div>
         </div>
     );
 };

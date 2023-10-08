@@ -10,7 +10,7 @@ const Home = (props) => {
         <>
             {user && (
                 <div className="text-center mt-4">
-                    <p className="text-lg font-semibold">Bienvenido, {user.user}</p>
+                    <p className="text-lg font-semibold">Welcome!, {user.user}</p>
                 </div>
             )}
             <div className="pt-6">
