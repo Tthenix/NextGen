@@ -11,12 +11,16 @@ import {
 import { useState } from "react";
 import { useMutation } from "react-query";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 async function registerUser(user) {
-    console.log("register");
-    console.log(user);
+    try {
+        const response = await axios.post("http://localhost:3000/users", user);
+        return response.data;
+    } catch (error) {
+        throw error;
+    }
 }
-
 
 
 export function Register() {

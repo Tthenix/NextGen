@@ -1,0 +1,29 @@
+{
+    "Name": "Manolo",
+    "User_id": 123,
+    "Nick_name": "elMano",
+    "email": "asdasd@asdasd.asd",
+    "password": "asdasdasd",
+    "rol": 1,
+    "links": {
+        "LinkedIn": null,
+        "Github": null,
+        "other_site": null
+    },
+    "technologies": {
+        "C": 4,
+        "electronic": 6,
+        "project_manager": 0
+    },
+    "projects": {
+        "project_created0": [
+            "PROJECT_ID"
+        ],
+        "project_collaborate": [
+            "PROJECT_ID",
+            "PROJECT_ID"
+        ]
+    },
+    "description": "saraza de la buena",
+    "ranking": 2.5
+}
