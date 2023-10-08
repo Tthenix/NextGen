@@ -5,7 +5,7 @@ import {
     Input,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import { BellIcon, Cog6ToothIcon, UserIcon } from "@heroicons/react/24/solid";
+import { PlusCircleIcon, Cog6ToothIcon, UserIcon } from "@heroicons/react/24/solid";
 
 export function NavbarWithSearch() {
     return (
@@ -21,6 +21,11 @@ export function NavbarWithSearch() {
                     </Typography>
                 </Link>
                 <div className="ml-auto flex gap-1 md:mr-4">
+                    <Link to="/Perfil">
+                        <IconButton variant="text" >
+                            <PlusCircleIcon className="h-4 w-4" />
+                        </IconButton>
+                    </Link>
                     <div className="relative flex w-full gap-2 md:w-max blue-gray">
                         <Input
                             type="search"
