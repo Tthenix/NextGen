@@ -11,6 +11,86 @@
       "pass": "1234",
       "user": "Nahuee2",
       "id": 2
+    },
+    {
+      "email": "merce@gmail.com",
+      "pass": "1234",
+      "user": "merce",
+      "id": 3
+    },
+    {
+      "email": "mario@gmail.com",
+      "pass": "1234",
+      "user": "mario",
+      "id": 4
+    },
+    {
+      "email": "lucca@gmail.com",
+      "pass": "1234",
+      "user": "Lucca",
+      "id": 5
+    }
+  ],
+  "proyectos": [
+    {
+      "projectName": "Cansat",
+      "description": "adsadasda",
+      "id": 1,
+      "userId": 1,
+      "tags": [
+        "tecnología",
+        "educación"
+      ]
+    },
+    {
+      "projectName": "Dschool",
+      "description": "SISISISI",
+      "id": 2,
+      "userId": 1,
+      "tags": [
+        "educación",
+        "innovación"
+      ]
+    },
+    {
+      "projectName": "MarioPRoject",
+      "description": "XD",
+      "id": 3,
+      "userId": 2,
+      "tags": [
+        "educación"
+      ]
+    },
+    {
+      "projectName": "waka waka",
+      "description": "waka waka eeee samira samira",
+      "id": 4,
+      "userId": 3,
+      "tags": [
+        "innovación",
+        "tecnología"
+      ]
+    },
+    {
+      "projectName": "nodoapp",
+      "description": "esta app es [ar sahdasjfjsaljaklfjals",
+      "id": 5
+    },
+    {
+      "projectName": "NextGen",
+      "description": "proyecto de space app que consiste en marketplace open source",
+      "tags": [
+        "tecnologia, innovacion"
+      ],
+      "id": 6
+    },
+    {
+      "projectName": "dadas",
+      "description": "asada",
+      "tags": [
+        "ada,sada"
+      ],
+      "id": 7
     }
   ]
 }

@@ -11,7 +11,7 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import Perfil from './pages/Perfil';
 import AboutUs from './pages/AboutUs';
-
+import CreateCards from './pages/CreateCards';
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: "/aboutUs",
         element: <AboutUs />,
+      },
+      {
+        path: "/CreateCards",
+        element: <CreateCards />,
       },
       {
         path: "/readMore",
