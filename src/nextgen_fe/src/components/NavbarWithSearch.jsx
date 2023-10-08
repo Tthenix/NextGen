@@ -21,7 +21,7 @@ export function NavbarWithSearch() {
                     </Typography>
                 </Link>
                 <div className="ml-auto flex gap-1 md:mr-4">
-                    <Link to="/Perfil">
+                    <Link to="/Register">
                         <IconButton variant="text" >
                             <PlusCircleIcon className="h-4 w-4" />
                         </IconButton>
