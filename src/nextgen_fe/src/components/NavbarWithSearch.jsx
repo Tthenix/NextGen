@@ -34,9 +34,11 @@ export function NavbarWithSearch() {
                             <MagnifyingGlassIcon className="h-4 w-4" />
                         </IconButton> */}
                     </div>
-                    <IconButton variant="text" >
-                        <Cog6ToothIcon className="h-4 w-4" />
-                    </IconButton>
+                    <Link to="/Perfil">
+                        <IconButton variant="text" >
+                            <Cog6ToothIcon className="h-4 w-4" />
+                        </IconButton>
+                    </Link>
                     {/* <IconButton variant="text">
                         <BellIcon className="h-4 w-4" />
                     </IconButton> */}

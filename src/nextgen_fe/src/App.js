@@ -9,6 +9,8 @@ import LayoutPublic from './layout/LayoutPublic';
 import NotFound from './pages/NotFound';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
+import Perfil from './pages/Perfil';
+
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/perfil",
+        element: <Perfil />,
       },
       {
         path: "/readMore",

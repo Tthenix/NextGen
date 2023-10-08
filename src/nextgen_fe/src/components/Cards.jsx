@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardFooter, Typography, Button } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 export function Cards() {
     return (
@@ -14,7 +15,9 @@ export function Cards() {
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <Button className="mx-auto">Read More</Button>
+                <Link to="ReadMore">
+                    <Button className="mx-auto">Read More</Button>
+                </Link>
             </CardFooter>
         </Card>
     );

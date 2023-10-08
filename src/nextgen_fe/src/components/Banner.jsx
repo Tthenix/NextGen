@@ -15,7 +15,7 @@ export function Banner() {
                         NEXTmos - conectando ideas
                     </Typography>
                     <Typography color="white" className="mt-1">
-                        Somos la 1ra página web en reunir proyectos
+                        Somos la primera página web en reunir proyectos
                     </Typography>
                     <Typography color="white" className="mt-1">
                         open source de ciencia a nivel internacional.
