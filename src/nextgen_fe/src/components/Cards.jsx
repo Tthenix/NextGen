@@ -3,15 +3,14 @@ import { Card, CardBody, CardFooter, Typography, Button } from "@material-tailwi
 
 export function Cards() {
     return (
-        <Card className="mt-6 w-80 flex flex-col justify-between">
+        <Card className="mt-6 w-80 mx-auto max-w-screen-xl flex flex-col justify-between">
             <CardBody className="flex flex-col items-center">
                 <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                    UI/UX Review Check
+                    Nombre del proyecto
                 </Typography>
                 <Typography className="text-center">
-                    The place is close to Barceloneta Beach and bus stop just 2 min by
-                    walk and near to "Naviglio" where you can enjoy the main
-                    night life in Barcelona.
+                    Descripcion:
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">

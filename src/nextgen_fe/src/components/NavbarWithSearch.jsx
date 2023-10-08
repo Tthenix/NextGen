@@ -21,8 +21,7 @@ export function NavbarWithSearch() {
                     </Typography>
                 </Link>
                 <div className="ml-auto flex gap-1 md:mr-4">
-                    <div className="relative flex w-full gap-2 md:w-max">
-
+                    <div className="relative flex w-full gap-2 md:w-max blue-gray">
                         <Input
                             type="search"
                             label="Search here..."
@@ -35,14 +34,14 @@ export function NavbarWithSearch() {
                             <MagnifyingGlassIcon className="h-4 w-4" />
                         </IconButton> */}
                     </div>
-                    <IconButton variant="text" color="blue-gray">
+                    <IconButton variant="text" >
                         <Cog6ToothIcon className="h-4 w-4" />
                     </IconButton>
-                    <IconButton variant="text" color="blue-gray">
+                    {/* <IconButton variant="text">
                         <BellIcon className="h-4 w-4" />
-                    </IconButton>
+                    </IconButton> */}
                     <Link to="/login">
-                        <IconButton variant="text" color="blue-gray">
+                        <IconButton variant="text" >
                             <UserIcon className="h-4 w-4" />
                         </IconButton>
                     </Link>
