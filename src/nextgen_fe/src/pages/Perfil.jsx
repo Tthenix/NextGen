@@ -1,8 +1,7 @@
 import React from 'react';
 import { Table } from '../components/Table';
-import { CarouselCustomNavigation } from '../components/Carousel';
 
-const ReadMore = () => {
+const Perfil = () => {
     return (
         <div className="grid grid-cols-6 grid-rows-7 gap-0 mx-auto max-w-screen-xl">
             <div className="bg-blue-500 col-span-4 row-span-2">
@@ -14,7 +13,7 @@ const ReadMore = () => {
                 </div>
             </div>
             <div className="bg-green-500 col-span-2 row-span-2"><Table /></div>
-            <div className="bg-red-500 col-span-2 row-span-2"><CarouselCustomNavigation /></div>
+            <div className="bg-red-500 col-span-2 row-span-2">tecnologies</div>
             <div className="bg-yellow-500 col-span-4 row-span-2 1">
                 <div>
                     Acerca de
@@ -29,4 +28,4 @@ const ReadMore = () => {
     );
 };
 
-export default ReadMore;
+export default Perfil;

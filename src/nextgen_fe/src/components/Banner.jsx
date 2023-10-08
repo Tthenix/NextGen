@@ -1,26 +1,32 @@
 import { Typography } from "@material-tailwind/react";
-import banner from "../img/Banner.jpg"
+import banner from "../img/Banner.jpg";
 
 export function Banner() {
     return (
-        <figure className="relative h-96 items-center mx-auto" style={{ width: '90%' }}>
+        <figure className="relative h-96 items-center mx-auto max-w-screen-xl">
             <img
                 className="h-full w-full rounded-xl object-cover object-center"
                 src={banner}
                 alt="banner"
             />
-            <figcaption className="absolute bottom-8 left-2/4 flex w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+            <figcaption className="absolute top-8 left-10 transform -translateY-1/4 py-4 px-4 md:py-8 md:px-8 lg:py-10 lg:px-10 rounded-xl text-white text-lg md:text-xl lg:text-2xl">
                 <div>
-                    <Typography variant="h5" color="blue-gray">
-                        Sara Lamalo
+                    <Typography variant="h4" color="white">
+                        NEXTmos - conectando ideas
                     </Typography>
-                    <Typography color="gray" className="mt-2 font-normal">
-                        20 July 2022
+                    <Typography color="white" className="mt-1">
+                        Somos la primera página web en reunir proyectos
+                    </Typography>
+                    <Typography color="white" className="mt-1">
+                        open source de ciencia a nivel internacional.
+                    </Typography>
+                    <Typography color="white" className="mt-1">
+                        Nuestra misión es que encuentres tu proyecto
+                    </Typography>
+                    <Typography color="white" className="mt-1">
+                        ideal y que potencies tu proyecto
                     </Typography>
                 </div>
-                <Typography variant="h5" color="blue-gray">
-                    Growth
-                </Typography>
             </figcaption>
         </figure>
     );
