@@ -12,6 +12,8 @@ import { Register } from './pages/Register';
 import Profile from './pages/Profile';
 import AboutUs from './pages/AboutUs';
 import CreateCards from './pages/CreateCards';
+import Contribute from './components/Contribute';
+import EditCard from './pages/EditCard';
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ export const router = createBrowserRouter([
       {
         path: "/CreateCards",
         element: <CreateCards />,
+      },
+      {
+        path: "/Contribute",
+        element: <Contribute />,
+      },
+      {
+        path: "/EditCard",
+        element: <EditCard />,
       },
       {
         path: "/readMore",

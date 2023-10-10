@@ -8,20 +8,20 @@ const ReadMore = () => {
         <div className="grid grid-cols-6 grid-rows-7 gap-0 mx-auto max-w-screen-xl">
             <div className=" col-span-4 row-span-2 flex flex-col items-center justify-center p-4">
                 <div>
-                    Objetivo
+                    objetive
                 </div>
                 <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non odio dignissim, finibus ipsum vitae, molestie lacus. Duis consectetur gravida tempus. Sed pharetra cursus diam feugiat condimentum. Nullam pharetra posuere risus a iaculis. Integer ac velit ornare eros consequat ultrices sed id sapien. Nulla ultrices lectus dui, non mollis lacus feugiat eget. Phasellus id aliquam metus.
+                    Your objetive!
                 </div>
             </div>
             <div className=" col-span-2 row-span-2 flex items-center justify-center p-4"><Table /></div>
             <div className="col-span-2 row-span-2 flex items-center justify-center p-4"><CarouselCustomNavigation /></div>
             <div className="col-span-4 row-span-2 flex flex-col items-center justify-center p-4">
                 <div>
-                    Acerca de
+                    About the project
                 </div>
                 <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non odio dignissim, finibus ipsum vitae, molestie lacus. Duis consectetur gravida tempus. Sed pharetra cursus diam feugiat condimentum. Nullam pharetra posuere risus a iaculis. Integer ac velit ornare eros consequat ultrices sed id sapien. Nulla ultrices lectus dui, non mollis lacus feugiat eget. Phasellus id aliquam metus.
+                    About the project!
                 </div>
             </div>
             <div className=" col-span-6 row-span-1 flex items-center justify-center p-4"><Redes /></div>

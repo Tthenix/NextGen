@@ -7,24 +7,20 @@ import {
     Input,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import { PlusCircleIcon, Cog6ToothIcon, UserIcon } from "@heroicons/react/24/solid";
+import { PlusCircleIcon, PencilIcon, Cog6ToothIcon, UserIcon } from "@heroicons/react/24/solid";
 import useProjects from "./UseProjects";
-
+import { useAtom } from "jotai";
+import { filterAtom } from "../Atoms/Atoms";
 
 // Componente NavbarWithSearch
 export function NavbarWithSearch() {
     const [searchTerm, setSearchTerm] = useState("");
     const projects = useProjects(); // Obtener proyectos usando el hook personalizado
+    const [Filter, setFIlter] = useAtom(filterAtom); // Obtener proyect
 
     const handleKeyPress = (event) => {
         if (event.key === "Enter") {
-            // Filtrar proyectos por término de búsqueda y etiquetas
-            const filteredProjects = projects.filter((project) =>
-                project.tags.some((tags) => tags.toLowerCase().includes(searchTerm.toLowerCase()))
-            );
-
-            // Lograr los proyectos filtrados en la consola
-            console.log(filteredProjects);
+            setFIlter(event.target.value)
         }
     };
     return (
@@ -43,6 +39,11 @@ export function NavbarWithSearch() {
                 </Link>
 
                 <div className="ml-auto flex gap-1 md:mr-4">
+                    <Link to="/EditCard">
+                        <IconButton variant="text" >
+                            <PencilIcon className="h-6 w-6" />
+                        </IconButton>
+                    </Link>
                     <Link to="/CreateCards">
                         <IconButton variant="text" >
                             <PlusCircleIcon className="h-6 w-6" />

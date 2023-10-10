@@ -15,11 +15,10 @@ import Select from "react-select";
 import axios from "axios";
 
 const options = [
-    { value: "html", label: "Material Tailwind HTML" },
-    { value: "react", label: "Material Tailwind React" },
-    { value: "vue", label: "Material Tailwind Vue" },
-    { value: "angular", label: "Material Tailwind Angular" },
-    { value: "svelte", label: "Material Tailwind Svelte" },
+    { value: "UX", label: "I like UX" },
+    { value: "QA", label: "I like UX" },
+    { value: "Front", label: "I like Front" },
+    { value: "Backend", label: "I like Backend" },
 ];
 
 async function registerUser(user) {
@@ -63,7 +62,7 @@ export function Register() {
             Swal.fire({
                 icon: "error",
                 title: "Error",
-                text: "Hubo un problema durante el registro. Por favor, inténtalo de nuevo más tarde.",
+                text: "There was a problem during registration. Please try again later.",
             });
         },
     });
@@ -74,8 +73,8 @@ export function Register() {
             // Registro exitoso, mostrar alerta y redirigir a la página de inicio de sesión
             Swal.fire({
                 icon: "success",
-                title: "¡Registro exitoso!",
-                text: "Ahora puedes iniciar sesión.",
+                title: "Registration Successful!",
+                text: "You can now log in.",
             }).then(() => {
                 navigate("/login");
             });

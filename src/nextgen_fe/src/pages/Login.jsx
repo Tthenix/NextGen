@@ -12,6 +12,7 @@ import { Link, useNavigate } from "react-router-dom";
 import LogoPng from "../img/loguitooo.png"
 import axios from "axios";
 import Swal from "sweetalert2";
+import Dibujo from "../img/AL PEDO.kra-autosave.jpg"
 
 export function Login() {
     let navigate = useNavigate();
@@ -42,7 +43,7 @@ export function Login() {
                 localStorage.setItem("userData", JSON.stringify(response.data[0])); // Almacena los datos del usuario en localStorage
                 Swal.fire({
                     icon: "success",
-                    title: "Inicio de sesión exitoso",
+                    title: "Successful Login",
                     showConfirmButton: false,
                     timer: 1500,
                 });
@@ -54,8 +55,8 @@ export function Login() {
                 // Muestra Sweet Alert para credenciales incorrectas
                 Swal.fire({
                     icon: "error",
-                    title: "Credenciales incorrectas",
-                    text: "Por favor, inténtalo de nuevo.",
+                    title: "Error Logging In",
+                    text: "Please try again.",
                 });
             }
         } catch (error) {
@@ -72,9 +73,17 @@ export function Login() {
     return (
 
         <div className="h-screen flex justify-center items-center">
+            <img
+                className="h-96 w-96 rounded-full object-cover "
+                src={Dibujo}
+                alt="nature image"
+            />
             <div className="w-80">
                 <div className=" grid place-items-center">
-                    <img src={LogoPng} alt="logo" className="w-40" />
+                    {/* <img src={LogoPng} alt="logo" className="w-60" /> */}
+                    <Typography variant="h4">
+                        NEXTmos
+                    </Typography>
 
                 </div>
 

@@ -1,150 +1,140 @@
 {
   "users": [
     {
-      "email": "hola@gmail.com",
+      "user": "a",
+      "email": "a",
       "pass": "1234",
-      "user": "Nahue",
-      "id": 1
-    },
-    {
-      "email": "nahue@gmail.com",
-      "pass": "1234",
-      "user": "Nahuee2",
-      "id": 2
-    },
-    {
-      "email": "merce@gmail.com",
-      "pass": "1234",
-      "user": "merce",
-      "id": 3
-    },
-    {
-      "email": "mario@gmail.com",
-      "pass": "1234",
-      "user": "mario",
+      "confirmPass": "1234",
+      "github": "asda",
+      "linkedIn": "asda",
+      "description": "adsad",
+      "selectedOption": {
+        "value": "react",
+        "label": "Material Tailwind React"
+      },
       "id": 4
     },
     {
-      "email": "lucca@gmail.com",
-      "pass": "1234",
-      "user": "Lucca",
-      "id": 5
-    },
-    {
-      "email": "palo@gmail.com",
-      "pass": "1234",
-      "user": "pablo",
-      "id": 6
-    },
-    {
-      "email": "seba@gmail.com",
-      "pass": "1234",
-      "user": "seba",
-      "id": 7
-    },
-    {
+      "user": "NASA",
       "email": "Nasa@gmail.com",
       "pass": "nasa123",
-      "user": "NASA",
-      "id": 8
-    },
-    {
-      "email": "testt@gmail.com",
-      "pass": "1234",
-      "user": "testtt",
-      "id": 9
-    },
-    {
-      "user": "a",
-      "email": "mario@gmail.com",
-      "pass": "1234",
-      "confirmPass": "1234",
-      "github": "aa",
-      "linkedIn": "aaa",
-      "description": "aaaa",
-      "selectedValue": "",
-      "id": 10
-    },
-    {
-      "user": "",
-      "email": "mario@gmail.com",
-      "pass": "123",
-      "confirmPass": "",
-      "github": "",
-      "linkedIn": "",
-      "description": "",
-      "selectedValue": "",
-      "id": 11
-    },
-    {
-      "user": "mario2pai",
-      "email": "mario@gmail.com",
-      "pass": "123",
-      "confirmPass": "123",
-      "github": "1asda",
-      "linkedIn": "adsad",
-      "description": "ada",
+      "confirmPass": "nasa123",
+      "github": "nasagithub.com",
+      "linkedIn": "nasalinkedin.com",
+      "description": "The oficial page of NASA",
       "selectedOption": {
         "value": "html",
         "label": "Material Tailwind HTML"
       },
-      "id": 12
+      "id": 2
     },
     {
-      "user": "adadsa",
+      "user": "nahuel",
+      "email": "nahue@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "asasa",
+      "linkedIn": "sasa",
+      "description": "dasfasf",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 5
+    },
+    {
+      "user": "ada",
+      "email": "adad",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "sdad",
+      "linkedIn": "adsa",
+      "description": "adasdasda dada",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 6
+    },
+    {
+      "user": "Jhon",
+      "email": "Jhon@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "github.com",
+      "linkedIn": "linkdin.com",
+      "description": "developer i love videogames!",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 7
+    },
+    {
+      "user": "Mario",
       "email": "mario@gmail.com",
       "pass": "1234",
       "confirmPass": "1234",
-      "github": "dafa",
-      "linkedIn": "asfafa",
-      "description": "afsafafsafga",
+      "github": "GIthub.com",
+      "linkedIn": "Linkedin.com",
+      "description": "I like games",
       "selectedOption": {
-        "value": "angular",
-        "label": "Material Tailwind Angular"
+        "value": "Front",
+        "label": "I like Front"
       },
-      "id": 13
+      "id": 8
     }
   ],
   "proyectos": [
     {
-      "projectName": "BPS Data Repository",
-      "description": "The NASA BPS data repository is seeking collaborators and sponsors to expand its scope and enhance its infrastructure. They are also looking for investments to conduct advanced data analysis and expand their database.",
+      "projectName": "NASA Biological Data Repository ",
+      "description": "The NASA open-source repository integrates two biological databases: the Ames Life Sciences Data Archive (ALSDA), the official repository for non-human scientific data covering a wide range of biological levels including physiological and behavioral data, and GeneLab, a multi-omic repository housing transcriptomic, metagenomic, epigenetic, proteomic.",
       "tags": [
         "Biology, Information Analysis, Space"
       ],
-      "userId": 8,
-      "needs": "Collaborators, sponsors, investment for advanced analysis, and database expansion.",
+      "userId": 2,
+      "needs": " Access to biological data, expertise in data analysis, space-related research focus.",
       "id": 1
     },
     {
       "projectName": "LSDA (NASA Space Flight Data Archives)",
-      "description": "The LSDA project is open to collaboration with research institutions and universities. They are seeking investment to maintain and improve data accessibility, as well as to expand the amount of data available to the scientific community.",
+      "description": "An active public access archive of NASA-funded research data from space flights, analog flights, and terrestrial biological sciences. It provides basic descriptions of individual research projects, and data collected is primarily stored in file-based formats. Non-attributable data from many of these studies can be directly downloaded from the website.",
       "tags": [
-        "Mathematics, Aerospace, Medicine, Data Analysis"
+        "Proficiency in mathematics, aerospace expertise, medical knowledge, data analysis skills."
       ],
-      "userId": 8,
-      "needs": "Collaborators (research institutions and universities), investment to enhance data accessibility and expand the amount of available data.",
+      "userId": 2,
+      "needs": "Proficiency in mathematics, aerospace expertise, medical knowledge, data analysis skills.",
       "id": 2
     },
     {
-      "projectName": "Physical Science Informatics, PSI (Physical Science Informatics System)",
-      "description": "PSI is seeking collaborators to utilize the system data and expand space research. They are interested in partnering with research institutions and scientists to explore new areas of study using existing data.",
+      "projectName": "Physical Sciences Informatics, PSI ",
+      "description": "Archive of physical science experiments conducted on the ISS and STS (Space Shuttle). It serves as a resource for researchers to extract data from the PSI system and further NASA's space research, using it as a research tool to advance scientific knowledge.",
       "tags": [
-        "Data System, Research, Physical Experiments"
+        "Data system expertise, research skills, physical science experiment knowledge."
       ],
-      "userId": 8,
-      "needs": "Collaborators (research institutions, scientists), partnerships to explore new areas of study.",
+      "userId": 2,
+      "needs": "Data system expertise, research skills, physical science experiment knowledge.",
       "id": 3
     },
     {
-      "projectName": "Materials in Space",
-      "description": "The Materials in Space project is open to collaboration with research organizations and companies. They are seeking investment to expand their database and improve analysis tools for future research.",
+      "projectName": "Dschool",
+      "description": "Dschool is a virtual platform for high schools, aiming to revolutionize education.",
       "tags": [
-        "Space, Data System, Information Analysis, Structure, Material Testing"
+        "tech, education"
       ],
-      "userId": 8,
-      "needs": "Collaborators (research organizations and companies), investment to expand the database and enhance analysis tools.",
+      "userId": 5,
+      "needs": "sponsors",
       "id": 4
+    },
+    {
+      "projectName": "NewProject",
+      "description": "YourProject!",
+      "tags": [
+        "Ux, front, tech"
+      ],
+      "userId": 2,
+      "needs": "Ux,Sponsors",
+      "id": 5
     }
   ]
 }

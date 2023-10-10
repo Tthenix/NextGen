@@ -17,7 +17,8 @@ const Profile = () => {
 
     useEffect(() => {
         // Obtener datos del usuario usando su ID
-        const userId = 12; // ID del usuario, esto debería obtenerse de la autenticación
+        const userId = JSON.parse(localStorage.getItem("userData")).id;
+        console.log({ userId }) // ID del usuario, esto debería obtenerse de la autenticación
         axios.get(`http://localhost:3000/users/${userId}`).then((response) => {
             setUserData(response.data);
         });
