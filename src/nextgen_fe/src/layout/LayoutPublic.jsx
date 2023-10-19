@@ -9,6 +9,7 @@ const LayoutPublic = () => {
             <main >
                 <Outlet />
             </main>
+            <hr className="my-12 mx-auto max-w-screen-xl border-blue-gray-50" />
             <Footer />
         </>
     );

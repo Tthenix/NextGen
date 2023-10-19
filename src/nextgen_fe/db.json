@@ -1,16 +1,140 @@
 {
   "users": [
     {
-      "email": "hola@gmail.com",
+      "user": "a",
+      "email": "a",
       "pass": "1234",
-      "user": "Nahue",
+      "confirmPass": "1234",
+      "github": "asda",
+      "linkedIn": "asda",
+      "description": "adsad",
+      "selectedOption": {
+        "value": "react",
+        "label": "Material Tailwind React"
+      },
+      "id": 4
+    },
+    {
+      "user": "NASA",
+      "email": "Nasa@gmail.com",
+      "pass": "nasa123",
+      "confirmPass": "nasa123",
+      "github": "nasagithub.com",
+      "linkedIn": "nasalinkedin.com",
+      "description": "The oficial page of NASA",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 2
+    },
+    {
+      "user": "nahuel",
+      "email": "nahue@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "asasa",
+      "linkedIn": "sasa",
+      "description": "dasfasf",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 5
+    },
+    {
+      "user": "ada",
+      "email": "adad",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "sdad",
+      "linkedIn": "adsa",
+      "description": "adasdasda dada",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 6
+    },
+    {
+      "user": "Jhon",
+      "email": "Jhon@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "github.com",
+      "linkedIn": "linkdin.com",
+      "description": "developer i love videogames!",
+      "selectedOption": {
+        "value": "html",
+        "label": "Material Tailwind HTML"
+      },
+      "id": 7
+    },
+    {
+      "user": "Mario",
+      "email": "mario@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "GIthub.com",
+      "linkedIn": "Linkedin.com",
+      "description": "I like games",
+      "selectedOption": {
+        "value": "Front",
+        "label": "I like Front"
+      },
+      "id": 8
+    }
+  ],
+  "proyectos": [
+    {
+      "projectName": "NASA Biological Data Repository ",
+      "description": "The NASA open-source repository integrates two biological databases: the Ames Life Sciences Data Archive (ALSDA), the official repository for non-human scientific data covering a wide range of biological levels including physiological and behavioral data, and GeneLab, a multi-omic repository housing transcriptomic, metagenomic, epigenetic, proteomic.",
+      "tags": [
+        "Biology, Information Analysis, Space"
+      ],
+      "userId": 2,
+      "needs": " Access to biological data, expertise in data analysis, space-related research focus.",
       "id": 1
     },
     {
-      "email": "nahue@gmail.com",
-      "pass": "1234",
-      "user": "Nahuee2",
+      "projectName": "LSDA (NASA Space Flight Data Archives)",
+      "description": "An active public access archive of NASA-funded research data from space flights, analog flights, and terrestrial biological sciences. It provides basic descriptions of individual research projects, and data collected is primarily stored in file-based formats. Non-attributable data from many of these studies can be directly downloaded from the website.",
+      "tags": [
+        "Proficiency in mathematics, aerospace expertise, medical knowledge, data analysis skills."
+      ],
+      "userId": 2,
+      "needs": "Proficiency in mathematics, aerospace expertise, medical knowledge, data analysis skills.",
       "id": 2
+    },
+    {
+      "projectName": "Physical Sciences Informatics, PSI ",
+      "description": "Archive of physical science experiments conducted on the ISS and STS (Space Shuttle). It serves as a resource for researchers to extract data from the PSI system and further NASA's space research, using it as a research tool to advance scientific knowledge.",
+      "tags": [
+        "Data system expertise, research skills, physical science experiment knowledge."
+      ],
+      "userId": 2,
+      "needs": "Data system expertise, research skills, physical science experiment knowledge.",
+      "id": 3
+    },
+    {
+      "projectName": "Dschool",
+      "description": "Dschool is a virtual platform for high schools, aiming to revolutionize education.",
+      "tags": [
+        "tech, education"
+      ],
+      "userId": 5,
+      "needs": "sponsors",
+      "id": 4
+    },
+    {
+      "projectName": "NewProject",
+      "description": "YourProject!",
+      "tags": [
+        "Ux, front, tech"
+      ],
+      "userId": 2,
+      "needs": "Ux,Sponsors",
+      "id": 5
     }
   ]
 }
