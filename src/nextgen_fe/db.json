@@ -83,6 +83,34 @@
         "label": "I like Front"
       },
       "id": 8
+    },
+    {
+      "user": "Letii",
+      "email": "leti@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "fafsa",
+      "linkedIn": "fasfa",
+      "description": "i like games",
+      "selectedOption": {
+        "value": "UX",
+        "label": "I like UX"
+      },
+      "id": 9
+    },
+    {
+      "user": "Facu",
+      "email": "facu@gmail.com",
+      "pass": "1234",
+      "confirmPass": "1234",
+      "github": "git.com",
+      "linkedIn": "link.com",
+      "description": "i like ux",
+      "selectedOption": {
+        "value": "UX",
+        "label": "I like UX"
+      },
+      "id": 10
     }
   ],
   "proyectos": [
@@ -135,6 +163,26 @@
       "userId": 2,
       "needs": "Ux,Sponsors",
       "id": 5
+    },
+    {
+      "projectName": "midashboard",
+      "description": "plataforma virtual aljdla",
+      "tags": [
+        "tech, ux, programing"
+      ],
+      "userId": 9,
+      "needs": "ux",
+      "id": 6
+    },
+    {
+      "projectName": "test",
+      "description": "adada",
+      "tags": [
+        "ux, tech"
+      ],
+      "userId": 10,
+      "needs": "adada",
+      "id": 7
     }
   ]
 }

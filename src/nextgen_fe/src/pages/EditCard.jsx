@@ -15,7 +15,7 @@ const EditCard = () => {
     useEffect(() => {
         if (userId) {
             // Filtra los proyectos con el userId coincidente
-            axios.get(`http://localhost:3000/proyectos`).then((response) => {
+            axios.get(`https://api-for-next-mos.vercel.app/proyectos`).then((response) => {
                 const matchingProject = response.data.find((p) => p.userId === parseInt(userId, 10));
                 if (matchingProject) {
                     const { projectName, description, needs } = matchingProject;
@@ -40,7 +40,7 @@ const EditCard = () => {
         e.preventDefault();
         try {
             // Envía los datos actualizados al servidor para actualizar el proyecto
-            await axios.put(`http://localhost:3000/proyectos/${userId}`, formData);
+            await axios.put(`https://api-for-next-mos.vercel.app/proyectos${userId}`, formData);
             // Redirige al usuario a la página de detalles del proyecto después de la actualización
             navigate(`/proyectos/${userId}`);
         } catch (error) {

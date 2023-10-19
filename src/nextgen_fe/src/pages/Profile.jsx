@@ -19,7 +19,7 @@ const Profile = () => {
         // Obtener datos del usuario usando su ID
         const userId = JSON.parse(localStorage.getItem("userData")).id;
         console.log({ userId }) // ID del usuario, esto debería obtenerse de la autenticación
-        axios.get(`http://localhost:3000/users/${userId}`).then((response) => {
+        axios.get(`https://api-for-next-mos.vercel.app/users/${userId}`).then((response) => {
             setUserData(response.data);
         });
     }, []);
@@ -34,7 +34,7 @@ const Profile = () => {
 
     const handleSaveChanges = () => {
         // Enviar datos actualizados del usuario al servidor
-        axios.put(`http://localhost:3000/users/${userData.id}`, userData).then((response) => {
+        axios.put(`https://api-for-next-mos.vercel.app/users/${userData.id}`, userData).then((response) => {
             console.log("Datos del usuario actualizados:", response.data);
             // Puedes mostrar una alerta o mensaje de éxito aquí si lo deseas
         });

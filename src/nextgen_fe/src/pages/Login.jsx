@@ -30,7 +30,7 @@ export function Login() {
 
     const handleSignIn = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/users", {
+            const response = await axios.get("https://api-for-next-mos.vercel.app/users", {
                 params: {
                     email: email,
                     password: password,
