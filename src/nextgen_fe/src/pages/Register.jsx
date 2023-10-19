@@ -15,7 +15,7 @@ import axios from "axios";
 
 async function registerUser(user) {
     try {
-        const response = await axios.post("http://localhost:3000/users", user);
+        const response = await axios.post("https://api-for-next-mos.vercel.app/users", user);
         return response.data;
     } catch (error) {
         throw error;
