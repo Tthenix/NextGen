@@ -24,8 +24,8 @@ const Cards = () => {
         const fetchProyectos = async () => {
             try {
                 const [proyectosResponse, usersResponse] = await Promise.all([
-                    axios.get("http://localhost:3000/proyectos"),
-                    axios.get("http://localhost:3000/users"),
+                    axios.get("https://api-for-next-mos.vercel.app/proyectos"),
+                    axios.get("https://api-for-next-mos.vercel.app/users"),
                 ]);
 
                 const proyectosData = proyectosResponse.data.map(proyecto => {
