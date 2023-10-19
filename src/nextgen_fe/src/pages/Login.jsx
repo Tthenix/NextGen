@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 import {
-    Card,
     CardBody,
     CardFooter,
     Typography,
     Input,
-    Checkbox,
     Button,
 } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
-import LogoPng from "../img/loguitooo.png"
 import axios from "axios";
 import Swal from "sweetalert2";
 import Dibujo from "../img/AL PEDO.kra-autosave.jpg"

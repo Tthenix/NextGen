@@ -15,7 +15,7 @@ const EditCard = () => {
     useEffect(() => {
         if (userId) {
             // Filtra los proyectos con el userId coincidente
-            axios.get(`http://localhost:3000/proyectos`).then((response) => {
+            axios.get(`https://api-for-next-mos.vercel.app/proyectos`).then((response) => {
                 const matchingProject = response.data.find((p) => p.userId === parseInt(userId, 10));
                 if (matchingProject) {
                     const { projectName, description, needs } = matchingProject;

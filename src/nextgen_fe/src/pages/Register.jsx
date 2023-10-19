@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-    Option,
     CardBody,
     CardFooter,
     Typography,
@@ -32,7 +31,7 @@ async function registerUser(user) {
 
 export function Register() {
     let navigate = useNavigate();
-    const [showPassword, setShowPassword] = useState(false);
+    // const [showPassword, setShowPassword] = useState(false);
     const [formData, setFormData] = useState({
         user: "",
         email: "",

@@ -15,7 +15,7 @@ import { filterAtom } from "../Atoms/Atoms";
 const Cards = () => {
     const [proyectos, setProyectos] = useState([]);
     const projects = useProjects();
-    const [Filter, setFIlter] = useAtom(filterAtom); // Obtener proyect
+    const [Filter] = useAtom(filterAtom); // Obtener proyect
 
     const filteredProjects = proyectos.filter((project) =>
         project.tags.some((tags) => tags.toLowerCase().includes(Filter.toLowerCase())))
@@ -24,8 +24,8 @@ const Cards = () => {
         const fetchProyectos = async () => {
             try {
                 const [proyectosResponse, usersResponse] = await Promise.all([
-                    axios.get("http://localhost:3000/proyectos"),
-                    axios.get("http://localhost:3000/users"),
+                    axios.get("https://api-for-next-mos.vercel.app/proyectos"),
+                    axios.get("https://api-for-next-mos.vercel.app/users"),
                 ]);
 
                 const proyectosData = proyectosResponse.data.map(proyecto => {
